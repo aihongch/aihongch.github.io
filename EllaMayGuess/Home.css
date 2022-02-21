@@ -20,7 +20,7 @@ header{
 header h1{
     color: white;
     margin-left: 20px;
-    font-family: 'Comfortaa', arial, sans-serif;
+    font-family: 'sansserf', arial, sans-serif;
 }
 
 header a{
@@ -54,7 +54,7 @@ header a:hover{
     background-position: bottom -90px right 1px;
 
     color: #DA792C;
-    font-family: 'Comfortaa', arial, sans-serif;
+    font-family: 'sansserf', arial, sans-serif;
     font-size: 20px;
 
     text-shadow: 2px 0px 1px white;

@@ -19,15 +19,31 @@
     </div>
 </div>
 
+<!--<script type="text/javascript" charset="utf-8">-->
+
+    <!--// fetch('data.json')-->
+    <!--//     .then(response => response.json())-->
+    <!--//     .then (data => {-->
+    <!--//         console.log(data)-->
+    <!--//         document.querySelector("#debug").innerText = data.constructor.toString()-->
+    <!--//-->
+    <!--//     })-->
+    <!---->
+    <!---->
+
+<!--</script>-->
+
 <script type="text/javascript" charset="utf-8">
 
-    fetch('data.json')
-        .then(response => response.json())
-        .then (data => {
-            console.log(data)
-            document.querySelector("#debug").innerText = data.toString()
+    fetch('./data.json', {mode:"no-cors"})
+        .then((res) => res.json())
+        .then((data) => {
+        document.getElementById("gallery1").InnerHTML = data["Section2"][0]["text"];
+    });
 
-        })
+
+
+
 
 </script>
 
