@@ -1,53 +1,64 @@
-html, body, header, footer, hgroup, nav, article, section, figure,
-figcaption, h1, h2, h3, ul, li, body, div, p, img {
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    border: 0;
-    font-family: Arial,sans-serif;
+html body{
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*font-size: 100%;*/
+    /*vertical-align: baseline;*/
+    /*border: 0;*/
+    /*font-family: Arial,sans-serif;*/
+    background-color: black;
+    width: 1430px;
+    font-family: 'Comfortaa', sans-serif;
+    border-top: 1px solid darkred
+
 }
 
-input[type="submit"] {
-    width: 7em;
-    margin:.5em;
-}
-
-header h1{
-    background: red;
-    text-align: left;
-    padding: auto;
-//padding: 0px;
-}
-
-
-fieldset{
-    margin-top: 1em;
-    display:inline;
-    padding: 0em;
-}
-
-fieldset p{
-    text-align:center;
-}
-
-#guess{
-    width:3em;
-}
-
-#form_text{
-    padding-left:.5em;
-}
-
-#Title{
-    font-size: 150%;
-    text-align: left;
-}
-.fieldset{
+header{
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align:center
 }
 
+header h1{
+    color: white;
+}
 
-.fieldset form{
-    margin: 0em;
+header a{
+    color: white;
+    text-shadow: 2px 0px 1px coral;
+    align-items: center;
+    justify-content: center;
+    padding-right: 110px;
+    text-decoration: none
+
+
+
+}
+
+header a:hover{
+    color: coral;
+    text-shadow: 2px 0px 1px white;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+/*header a:active{*/
+    /*color: coral;*/
+    /*font-family: 'Comfortaa', sans-serif;*/
+    /*text-shadow: 2px 0px 1px white*/
+
+/*}*/
+
+.image-box {
+    background: var(--image-url) center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 10% 83%;
+    color: coral;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 20px;
+    text-shadow: 2px 0px 1px white;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center
+
 }
