@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Home Page</title>
-    <link href="Home.css" type="text/css" rel="stylesheet" />
+    <link href="home.css" type="text/css" rel="stylesheet" />
 </head>
 
 <header>
@@ -12,43 +12,32 @@
         <a href="Contact.html">Contact</a></h1>
 </header>
 
-<body>
+<>
 <div class="image-box" style="--image-url: url('images/rodeo-drive.jpg')">
     <div>
         <h1>LA - The City of Angels</h1>
     </div>
 </div>
 
-<!--<script type="text/javascript" charset="utf-8">-->
-
-    <!--// fetch('data.json')-->
-    <!--//     .then(response => response.json())-->
-    <!--//     .then (data => {-->
-    <!--//         console.log(data)-->
-    <!--//         document.querySelector("#debug").innerText = data.constructor.toString()-->
-    <!--//-->
-    <!--//     })-->
-    <!---->
-    <!---->
-
-<!--</script>-->
-
 <script type="text/javascript" charset="utf-8">
 
     fetch('./data.json', {mode:"no-cors"})
         .then((res) => res.json())
         .then((data) => {
-        document.getElementById("gallery1").InnerHTML = data["Section2"][0]["text"];
-    });
+            document.getElementById("gallery1").InnerHTML = data["section2"][0]["text"]
+        });
 
-
-
-
+    // fetch('./data.json', {mode:"no-cors"})
+    //     .then((res) => res.json())
+    //     .then((data) => {
+    //         document.getElementById("gallery2").InnerHTML = data["section2"][1]["text"]
+    //     });
 
 </script>
 
-
-
+<p>Current time is <span id="gallery1"></span>.</p>
 
 </body>
+
+
 </html>
