@@ -7,8 +7,7 @@ html body{
     /*font-family: Arial,sans-serif;*/
     background-color: black;
     width: 1430px;
-    font-family: 'Comfortaa', sans-serif;
-    border-top: 1px solid darkred
+    border-top: 1px solid #FF5733
 
 }
 
@@ -20,11 +19,13 @@ header{
 
 header h1{
     color: white;
+    margin-left: 20px;
+    font-family: 'Comfortaa', arial, sans-serif;
 }
 
 header a{
     color: white;
-    text-shadow: 2px 0px 1px coral;
+    text-shadow: 2px 0px 1px #DA792C;
     align-items: center;
     justify-content: center;
     padding-right: 110px;
@@ -35,9 +36,8 @@ header a{
 }
 
 header a:hover{
-    color: coral;
+    color: #DA792C;
     text-shadow: 2px 0px 1px white;
-    font-family: 'Comfortaa', sans-serif;
 }
 
 /*header a:active{*/
@@ -51,12 +51,14 @@ header a:hover{
     background: var(--image-url) center center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 10% 83%;
-    color: coral;
-    font-family: 'Comfortaa', sans-serif;
+    background-position: bottom -90px right 1px;
+
+    color: #DA792C;
+    font-family: 'Comfortaa', arial, sans-serif;
     font-size: 20px;
+
     text-shadow: 2px 0px 1px white;
-    min-height: 50vh;
+    min-height: 400px;
     display: flex;
     align-items: center;
     justify-content: center
