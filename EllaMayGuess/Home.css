@@ -1,11 +1,5 @@
 html body{
-    /*margin: 0;*/
-    /*padding: 0;*/
-    /*font-size: 100%;*/
-    /*vertical-align: baseline;*/
-    /*border: 0;*/
-    /*font-family: Arial,sans-serif;*/
-    background-color: white;
+    background-color: black;
     width: 1430px;
     border-top: 1px solid #FF5733
 
@@ -64,3 +58,30 @@ header a:hover{
     justify-content: center
 
 }
+
+table{
+    padding: 100px 100px 100px 100px;
+    background-color: #272A2D;
+    display:inline-block;
+
+}
+
+tr{
+    align-items: center;
+    justify-content: center;
+    display:inline-block;
+}
+
+td{
+    padding: 20px 20px 20px 20px;
+    background-color: black;
+    border-left: 25px solid #272A2D;
+}
+
+td p{
+    color: white;
+}
+
+
+
+
