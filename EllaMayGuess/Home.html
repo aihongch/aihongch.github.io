@@ -10,7 +10,7 @@
 <header>
     <h1><a href="Home.html">Home</a>
         <a href="Explore.html">Explore</a>
-        <a href="Contact.html">Contact</a></h1>
+        <a href="Explore.html">Contact</a></h1>
 </header>
 
 <div class="image-box" style="--image-url: url('images/rodeo-drive.jpg')">
@@ -25,53 +25,147 @@
         .then((res) => res.json())
         .then((data) => {
             console.log(data);
-            document.getElementById("part1").InnerHTML = data["section2"][0]["text"]
+            document.getElementById("part1").innerHTML = data["section2"][0]["text"]
+
+        });
+
+    fetch('./data.json', {mode:"no-cors"})
+        .then((res) => res.json())
+        .then((data) => {
+            console.log(data);
+            document.getElementById("part2").innerHTML = data["section2"][1]["text"]
+
+
+        });
+
+    fetch('./data.json', {mode:"no-cors"})
+        .then((res) => res.json())
+        .then((data) => {
+            console.log(data);
+            document.getElementById("part3").innerHTML = data["section2"][2]["text"]
+
+        });
+
+    fetch('./data.json', {mode:"no-cors"})
+        .then((res) => res.json())
+        .then((data) => {
+            console.log(data);
+            document.getElementById("section3-1").innerHTML = data["section3"]["text"][0]
+            document.getElementById("section3-2").innerHTML = data["section3"]["text"][1]
+
 
         });
 
 
-    // fetch('./data.json', {mode:"no-cors"})
-    //     .then((res) => res.json())
-    //     .then((data) => {
-    //         document.getElementById("gallery2").InnerHTML = data["section2"][1]["text"]
-    //     });
+    fetch('./data.json', {mode:"no-cors"})
+        .then((res) => res.json())
+        .then((data) => {
+            console.log(data);
+            document.getElementById("section4-1").innerHTML = data["section4"][0]["text"]
+
+        });
+
+    fetch('./data.json', {mode:"no-cors"})
+        .then((res) => res.json())
+        .then((data) => {
+            console.log(data);
+            document.getElementById("section4-2").innerHTML = data["section4"][1]["text"]
+
+        });
+
 
 </script>
 
 <table width="1430px">
     <tr>
-        <td><img src="images/griffith.jpg" width="315" height="215">
-            <p id = "part1">  </p>
-            <p> description </p>
+        <td width = "315" height="425"><img src="images/griffith.jpg" width="315" height="215">
+            <p> Griffith Observatory </p>
+            <p id = "part1"> </p>
         </td>
     </tr>
 
     <tr>
-        <td><img src="images/mountains.jpg" width="315" height="215">
-            <p> picture 2 </p>
-            <p> description </p>
+        <td width="315" height="425"><img src="images/mountains.jpg" width="315" height="215">
+            <p> Mountains </p>
+            <p id = "part2"> </p>
         </td>
         <!--<td><img src="images/mountains.jpg" width="315" height="215"> </td>-->
         <!--<td><img src="images/universalstudios.jpg" width="315" height="215"></td>-->
     </tr>
 
     <tr>
-        <td><img src="images/universalstudios.jpg" width="315" height="215">
-            <p> picture 3 </p>
-            <p> description </p>
+        <td width="315" height="425"><img src="images/universalstudios.jpg" width="315" height="215">
+            <p> Universal Studios </p>
+            <p id = "part3"></p>
         </td>
-        <!--<td><img src="images/mountains.jpg" width="315" height="215"> </td>-->
-        <!--<td><img src="images/universalstudios.jpg" width="315" height="215"></td>-->
+
     </tr>
 
 
 </table>
 
-<div class = "section 3">
-    <img src="images/lasky.png" width="315" height="215">
-    <p>Your long text here....</p>
+<div class = "section3" width="1430px">
+    <div class="photo">
+    <img src="images/lasky.png" width="500" height="250">
+    </div>
+
+
+    <div class="text" >
+    <p id = "section3-1"></p>
+        <p id = "section3-2"></p>
+    </div>
 
 </div>
+
+<div class = "section4" width="1430px">
+    <div class="picture1">
+        <img src="images/hollywood.jpg" width="500" height="250">
+    </div>
+
+
+    <div class="text" >
+        <h3>Hollywood</h3>
+        <p id = "section4-1"></p>
+    </div>
+
+
+</div>
+
+
+<div class = "section4-2" width="1430px">
+    <div class="picture2">
+        <img src="images/beach.jpg" width="500" height="250">
+    </div>
+
+
+    <div class="text" >
+        <h2>Beaches</h2>
+        <p id = "section4-2"></p>
+    </div>
+
+
+</div>
+
+
+<footer>
+
+    <div class = "quote">
+    <p>Tip the world over on its side and everything loose will land</p>
+    <p1>in Los Angeles.</p1>
+    <h4> —Frank Lloyd Wright </h4>
+    </div>
+
+    <div class = "author">
+        <h2>Designed By</h2>
+        <p>Aihong Chen</p>
+        <p> <a href = "mailto: aihongch@usc.edu">aihongchen@usc.edu</a></p>
+        <p><a href= "tel:555-666-7777">(+1) 555 666 7777</a> </p>
+
+
+    </div>
+
+
+</footer>
 
 
 </body>
