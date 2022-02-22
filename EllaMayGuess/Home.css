@@ -165,6 +165,7 @@ footer{
 
 .author p a:hover{
     color: white;
+    text-decoration: underline;
 
 }
 
