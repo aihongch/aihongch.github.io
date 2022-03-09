@@ -15,13 +15,11 @@ def train():
     joblib.dump(regr, "regr.pkl")
 
 
-def load():
+def load(age, weight):
     clf = joblib.load("regr.pkl")
-    age = 18
-    weight = 60
     x = pd.DataFrame([[age, weight]], columns=["Age", "Weight"])
     prediction = clf.predict(x)[0]
-    print(prediction)
+    return prediction
 
 
 if __name__ == "__main__":

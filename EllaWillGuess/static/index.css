@@ -8,11 +8,11 @@ h2{
     align-items: center;
     justify-content: center;
     padding: 100px 175px 0px 100px;
-    color: #770500;
+    color: #8B0100;
 }
 
 p{
-    color: #770500;
+    color: #8B0100;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -51,5 +51,9 @@ button {
     margin: 0px 100px 0px 100px;
     transition-duration: 0.4s;
     cursor: pointer;
+}
+
+h4{
+    text-align: center;
 }
 
